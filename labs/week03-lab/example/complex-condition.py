@@ -1,4 +1,8 @@
-# Multiple conditions with logical operators
+# arithmetic opertors --> + - // % **
+# compartion oparators --> ==! = < > <== >==
+# logical oparators --> and (&&) or (||) not (!)
+
+# Multiple condition with logical oparators
 username = "admin"
 password = "12345"
 is_active = True
