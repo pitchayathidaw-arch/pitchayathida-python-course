@@ -26,13 +26,27 @@ def calculate_circle(radius):
 return string ที่จัดรูปแบบข้อมูลผู้ใช้
 รูปแบบ: "[username] (age: [age]) - [Premium User / Standard User]"
 
+
+# อย่าลืมเขียนโปรแกรมในส่วนของการทดลองใช้งานด้วย เอาซัก  3 ลูกค้า
+Print(create_user_profile("Pichayathida ",40))
+print(create_user_profile("ploy"))
+print(create_user_profile("pitcha",22,True))
 """
+def create_user_profile(Username, age = 20, premium = False):
+    #Your problem 3 solution
+    user_type = "standard"
 
-def create_user_profile(username, age=18, premium=False):
-    # Your Problem 3 solution
-    pass
+    if premium :
+        user_type= "Premium"
+    return f"(username)(age: {age}- {user_type}"
 
-""" เขียน function ชื่อ analyze_scores ที่มีคุณสมบัติดังนี้:
+
+print(create_user_profile("Pichayathida ",40))
+print(create_user_profile("ploy"))
+print(create_user_profile("pitcha",22,True))
+"""""
+
+เขียน function ชื่อ analyze_scores ที่มีคุณสมบัติดังนี้:
 
 รับ list ของคะแนน (ตัวเลข)
 return dictionary ที่มี:
