@@ -1,0 +1,46 @@
+class Rectangle:
+ 
+    def __int__(self , length , width):
+        self.__length = length
+        self.__width = width
+ 
+    def getArea(self):
+        return f"Area of {self.__width} width and {self.__length} lemgth = {self.__width * self.__length} "
+ 
+    def getperimeter(self):
+        return f"Perimeter of {self.__width} width and {self.__length} lemgth = {2 * (self.__width * self.__length)} "
+ 
+    def isSquare(self):
+        return self.__width == self.__length
+ 
+myRectangl = Rectangle(5,10)
+print(myRectangl.getArea())
+ 
+myRectangl2 = Rectangle(10 , 10)
+print(myRectangl2.isSquare())
+ 
+------------------------------------------------------------------------------------------------------------------------
+ 
+quiz-inheri
+ 
+class Vehicle:
+   
+    def __init__(self, brand, model , year):
+        self.brand = self.brand
+        self.species = self.species
+        self.year = self.year
+ 
+    def get_info(self):
+        return f"Vehicle info:\nBrand:{self.brand},Model: {self.model},Year: {self.year}"
+ 
+class Car(Vehicle):    
+ 
+    def __int__(self , brand , model , year ,number_of_doors):
+        super().__init__( brand , model , year ,number_of_doors)
+        self.number_of_doors = number_of_doors
+ 
+    def get_info(self):
+        return f"Vehicle info:\nBrand:{self.brand},Model: {self.model},Year: {self.year}"
+Vehicle = Vehicle("toyota","yaric","2025")
+print(Vehicle.get_info())
+ 
